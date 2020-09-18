@@ -1,37 +1,96 @@
 package codingame.thereIsNoSpoon;
 
 import java.util.*;
-import java.io.*;
-import java.math.*;
 
 /**
- * Don't let the machines win. You are humanity's last hope...
+ * https://www.codingame.com/training/medium/there-is-no-spoon-episode-1
+ *
+ * The game is played on a rectangular grid with a given size. Some cells contain power nodes.
+ * The rest of the cells are empty.
+ * The goal is to find, when they exist, the horizontal and vertical neighbors of each node.
+ *
+ *  Rules
+ * To do this, you must find each (x1,y1) coordinates containing a node, and display the (x2,y2) coordinates of the
+ * next node to the right, and the (x3,y3) coordinates of the next node to the bottom within the grid.
+ * If a neighbor does not exist, you must output the coordinates -1 -1 instead of (x2,y2) and/or (x3,y3).
+ * You lose if:
+ * You give an incorrect neighbor for a node.
+ * You give the neighbors for an empty cell.
+ * You compute the same node twice.
+ * You forget to compute the neighbors of a node.
+ *
  **/
 class Player {
 
-    static boolean[][] grid;
+    // Write an action using System.out.println()
+    // To debug: System.err.println("Debug messages...");
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         int width = in.nextInt(); // the number of cells on the X axis
         int height = in.nextInt(); // the number of cells on the Y axis
 
-        grid = new boolean [width][height];
-
         if (in.hasNextLine()) {
-            String line = in.nextLine();
+            in.nextLine();
         }
+
+        // Creating a boolean grid (bi-dimensional array) of the
+        boolean[][] grid = new boolean [height][width];
         for (int i = 0; i < height; i++) {
             String line = in.nextLine(); // width characters, each either 0 or .
-            // System.err.println(line);
+            boolean[] lineArray = new boolean [line.length()];
 
+            // Analyzing the line
+            for (int j = 0; j < line.length(); j++) {
+                boolean isPresent = false;
+                if (line.charAt(j) == '0'){
+                    isPresent = true;
+                }
+                lineArray[j] = isPresent;
+            }
+            grid[i] = lineArray;
         }
 
-        // Write an action using System.out.println()
-        // To debug: System.err.println("Debug messages...");
 
+        for (int row = 0; row < grid.length; row++) {
+            for (int column = 0; column < grid[row].length; column++) {
+                boolean currentCell = grid[row][column];
+                // Skipping analyze if current cell doesn't contain a node
+                if (currentCell==false) continue;
 
-        // Three coordinates: a node, its right neighbor, its bottom neighbor
-        System.out.println("0 0 1 0 0 1");
+                int[] rightNeighbour = findingNeighbourToTheRight(column, row, grid[row]);
+                int[] downNeighbour = findingNeighbourDown(column, row, grid);
+
+                // Three coordinates: a node, its right neighbor, its bottom neighbor
+                System.out.println(column + " " + row + " "
+                        + rightNeighbour[0] + " " + rightNeighbour[1] + " "
+                        + downNeighbour[0] + " " + downNeighbour[1]);
+            }
+        }
     }
+
+    static int[] findingNeighbourToTheRight(int startingColumn, int startingRow, boolean[] row){
+        int[] neighbourToTheRightPosition = {-1, -1};
+        for (int columnChecking = startingColumn+1; columnChecking < row.length; columnChecking++) {
+            if(row[columnChecking]){
+                neighbourToTheRightPosition[0]= columnChecking;
+                neighbourToTheRightPosition[1]= startingRow;
+                return neighbourToTheRightPosition;
+            }
+        }
+        return neighbourToTheRightPosition;
+    }
+
+    static int[] findingNeighbourDown(int startingColumn, int startingRow, boolean[][] grid){
+        int[] neighbourDownPosition = {-1, -1};
+        for (int rowChecking = startingRow+1; rowChecking < grid.length; rowChecking++) {
+            if(grid[rowChecking][startingColumn]){
+                neighbourDownPosition[0]= startingColumn;
+                neighbourDownPosition[1]= rowChecking;
+                return neighbourDownPosition;
+            }
+        }
+        return neighbourDownPosition;
+    }
+
 }
