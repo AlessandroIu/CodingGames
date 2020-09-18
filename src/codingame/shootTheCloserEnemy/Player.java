@@ -12,7 +12,7 @@ class Player {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
 
-        // game loop
+        // Game loop
         while (true) {
             String enemy1 = in.next(); // name of enemy 1
             int dist1 = in.nextInt(); // distance to enemy 1
@@ -28,8 +28,6 @@ class Player {
             } else {
                 System.out.println(enemy2);
             }
-
-
         }
     }
 }

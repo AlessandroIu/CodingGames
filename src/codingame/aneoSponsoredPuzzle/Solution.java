@@ -14,21 +14,12 @@ import java.math.*;
  *
  **/
 
-
-
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
 class Solution {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         int speed = in.nextInt();
         int lightCount = in.nextInt();
-
-//        System.out.println("Speed: " + speed);
-//        System.out.println("Light count: " + lightCount);
 
         int[][] distanceAndDuration = new int[lightCount][2];
 
@@ -39,16 +30,14 @@ class Solution {
             distanceAndDuration[i][1] = duration;
         }
 
-//        System.out.println(Arrays.deepToString(distanceAndDuration));
-
-        // TODO: try to pass all traffic lights
-
+        // Trying to pass all traffic lights with a given integer speed expressed in Km/h
         for (int speedTrying = speed; speedTrying > 0 ; speedTrying--) {
             double speedMSTrying = speedTrying/3.6;
+            // Checking if the car passes at the current speed, otherwise try with 1 Km/h slower
             if (checkIfPassesAllTrafficLightsAtCurrentSpeed(lightCount, distanceAndDuration, speedMSTrying)){
                 BigDecimal bigDecimal = new BigDecimal(String.valueOf(speedMSTrying*3.6));
-                int succesfulSpeedInKmH = bigDecimal.intValue();
-                System.out.println(succesfulSpeedInKmH);
+                int successfulSpeedInKmH = bigDecimal.intValue();
+                System.out.println(successfulSpeedInKmH);
                 return;
             };
         }

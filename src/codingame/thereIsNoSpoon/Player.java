@@ -9,15 +9,15 @@ import java.util.*;
  * The rest of the cells are empty.
  * The goal is to find, when they exist, the horizontal and vertical neighbors of each node.
  *
- *  Rules
+ *  RULES
  * To do this, you must find each (x1,y1) coordinates containing a node, and display the (x2,y2) coordinates of the
  * next node to the right, and the (x3,y3) coordinates of the next node to the bottom within the grid.
  * If a neighbor does not exist, you must output the coordinates -1 -1 instead of (x2,y2) and/or (x3,y3).
  * You lose if:
- * You give an incorrect neighbor for a node.
- * You give the neighbors for an empty cell.
- * You compute the same node twice.
- * You forget to compute the neighbors of a node.
+ * - you give an incorrect neighbor for a node;
+ * - you give the neighbors for an empty cell;
+ * - you compute the same node twice;
+ * - you forget to compute the neighbors of a node.
  *
  **/
 class Player {
@@ -34,29 +34,26 @@ class Player {
             in.nextLine();
         }
 
-        // Creating a boolean grid (bi-dimensional array) of the
+        // Creating a boolean grid (bi-dimensional array) representative of the input
         boolean[][] grid = new boolean [height][width];
+        // Analyzing each line
         for (int i = 0; i < height; i++) {
-            String line = in.nextLine(); // width characters, each either 0 or .
+            String line = in.nextLine(); // width characters, each either "0" or "."
             boolean[] lineArray = new boolean [line.length()];
-
-            // Analyzing the line
             for (int j = 0; j < line.length(); j++) {
                 boolean isPresent = false;
-                if (line.charAt(j) == '0'){
-                    isPresent = true;
-                }
+                if (line.charAt(j) == '0') isPresent = true;
                 lineArray[j] = isPresent;
             }
             grid[i] = lineArray;
         }
 
-
+        // Analyzing the above created grid and computing the output
         for (int row = 0; row < grid.length; row++) {
             for (int column = 0; column < grid[row].length; column++) {
                 boolean currentCell = grid[row][column];
-                // Skipping analyze if current cell doesn't contain a node
-                if (currentCell==false) continue;
+                // Skipping cell analyzing if it doesn't contains a node
+                if (!currentCell) continue;
 
                 int[] rightNeighbour = findingNeighbourToTheRight(column, row, grid[row]);
                 int[] downNeighbour = findingNeighbourDown(column, row, grid);
