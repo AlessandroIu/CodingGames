@@ -1,3 +1,5 @@
+package toptalTests.task3;
+
 public class SplitStringOfAAndBIntoThreeSeparateParts {
 
     public static void main(String[] args) {
