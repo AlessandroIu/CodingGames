@@ -8,7 +8,7 @@ import java.util.Scanner;
  * At the start of each game turn, you are given the height of the 8 mountains from left to right.
  * By the end of the game turn, you must fire on the highest mountain by outputting its index (from 0 to 7).
  * Firing on a mountain will only destroy part of it, reducing its height. Your ship descends after each pass.
- *
+ * <p>
  * The while loop represents the game.
  * Each iteration represents a turn of the game
  * where you are given inputs (the heights of the mountains)
@@ -26,8 +26,8 @@ class Player {
             int heightOfHighestMountain = 0;
             for (int i = 0; i < 8; i++) {
                 int mountainH = in.nextInt(); // represents the height of one mountain.
-                if (mountainH>=heightOfHighestMountain){
-                    heightOfHighestMountain=mountainH;
+                if (mountainH >= heightOfHighestMountain) {
+                    heightOfHighestMountain = mountainH;
                     indexOfHighestMountain = i;
                 }
             }

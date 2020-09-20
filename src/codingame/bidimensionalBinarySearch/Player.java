@@ -1,16 +1,13 @@
 package codingame.bidimensionalBinarySearch;
 
-import java.util.*;
-import java.io.*;
-import java.math.*;
+import java.util.Scanner;
 
 /**
  * https://www.codingame.com/ide/puzzle/shadows-of-the-knight-episode-1
- *
+ * <p>
  * Batman will look for the hostages on a given building by jumping from one window to another using his grapnel gun.
  * Batman's goal is to jump to the window where the hostages are located in order to disarm the bombs.
  * Unfortunately he has a limited number of jumps before the bombs go off...
- *
  **/
 class Player {
 
@@ -36,39 +33,39 @@ class Player {
 
             // the location of the next window Batman should jump to.
 
-            switch(bombDir) {
+            switch (bombDir) {
                 case "U":
-                    searchingBottom=Y0-1;
+                    searchingBottom = Y0 - 1;
                     break;
                 case "UR":
-                    searchingLeft=X0+1;
-                    searchingBottom=Y0-1;
+                    searchingLeft = X0 + 1;
+                    searchingBottom = Y0 - 1;
                     break;
                 case "R":
-                    searchingLeft=X0+1;
+                    searchingLeft = X0 + 1;
                     break;
                 case "DR":
-                    searchingLeft=X0+1;
-                    searchingTop=Y0+1;
+                    searchingLeft = X0 + 1;
+                    searchingTop = Y0 + 1;
                     break;
                 case "D":
-                    searchingTop=Y0+1;
+                    searchingTop = Y0 + 1;
                     break;
                 case "DL":
-                    searchingRight=X0-1;
-                    searchingTop= Y0+1;
+                    searchingRight = X0 - 1;
+                    searchingTop = Y0 + 1;
                     break;
                 case "L":
-                    searchingRight=X0-1;
+                    searchingRight = X0 - 1;
                     break;
                 case "UL":
-                    searchingRight=X0-1;
-                    searchingBottom=Y0-1;
+                    searchingRight = X0 - 1;
+                    searchingBottom = Y0 - 1;
                     break;
             }
 
-            X0 = (searchingLeft + searchingRight)/2;
-            Y0 = (searchingTop + searchingBottom)/2;
+            X0 = (searchingLeft + searchingRight) / 2;
+            Y0 = (searchingTop + searchingBottom) / 2;
 
             System.out.println(X0 + " " + Y0);
         }

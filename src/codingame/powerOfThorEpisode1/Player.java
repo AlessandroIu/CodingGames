@@ -1,19 +1,16 @@
 package codingame.powerOfThorEpisode1;
 
-import java.util.*;
-import java.io.*;
-import java.math.*;
+import java.util.Scanner;
 
 /**
- *
  * https://www.codingame.com/training/easy/power-of-thor-episode-1
  * ---
  * Your program must allow Thor to reach the light of power.
- *
- *  Rules
+ * <p>
+ * Rules
  * Thor moves on a map which is 40 wide by 18 high. Note that the coordinates (X and Y) start at the top left!
  * This means the most top left cell has the coordinates "X=0,Y=0" and the most bottom right one has the coordinates "X=39,Y=17".
- *
+ * <p>
  * Once the program starts you are given:
  * the variable lightX: the X position of the light of power that Thor must reach.
  * the variable lightY: the Y position of the light of power that Thor must reach.
@@ -52,18 +49,18 @@ class Player {
 
             System.err.println("remaining X " + remainingX);
             System.err.println("remaining Y " + remainingY);
-            if(remainingY > 0) {
+            if (remainingY > 0) {
                 nextMove = nextMove + "N";
                 remainingY--;
-            } else if (remainingY < 0){
+            } else if (remainingY < 0) {
                 nextMove = nextMove + "S";
                 remainingY++;
             }
 
-            if(remainingX > 0) {
+            if (remainingX > 0) {
                 nextMove = nextMove + "W";
                 remainingX--;
-            } else if (remainingX < 0){
+            } else if (remainingX < 0) {
                 nextMove = nextMove + "E";
                 remainingX++;
             }

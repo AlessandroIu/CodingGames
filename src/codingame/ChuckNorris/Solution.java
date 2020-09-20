@@ -1,8 +1,6 @@
 package codingame.ChuckNorris;
 
-import java.util.*;
-import java.io.*;
-import java.math.*;
+import java.util.Scanner;
 
 /**
  * https://www.codingame.com/training/easy/chuck-norris

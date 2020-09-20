@@ -1,6 +1,6 @@
 package codingame.shootTheCloserEnemy;
 
-import java.util.*;
+import java.util.Scanner;
 
 
 /**
