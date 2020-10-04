@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/codingame/001-Shoot_the_closer_enemy/001-Shoot_the_closer_enemy.iml" filepath="$PROJECT_DIR$/codingame/001-Shoot_the_closer_enemy/001-Shoot_the_closer_enemy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingame/002-Shoot_the_highest_mountain/002-Shoot_the_highest_mountain.iml" filepath="$PROJECT_DIR$/codingame/002-Shoot_the_highest_mountain/002-Shoot_the_highest_mountain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingame/003-Bidimensional_binary_search/003-Bidimensional_binary_search.iml" filepath="$PROJECT_DIR$/codingame/003-Bidimensional_binary_search/003-Bidimensional_binary_search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingame/004-Aneo_sponsored_puzzle/004-Aneo_sponsored_puzzle.iml" filepath="$PROJECT_DIR$/codingame/004-Aneo_sponsored_puzzle/004-Aneo_sponsored_puzzle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingame/005-There_is_no_spoon/005-There_is_no_spoon.iml" filepath="$PROJECT_DIR$/codingame/005-There_is_no_spoon/005-There_is_no_spoon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingame/006-Power_of_Thor_-_Episode_1/006-Power_of_Thor_-_Episode_1.iml" filepath="$PROJECT_DIR$/codingame/006-Power_of_Thor_-_Episode_1/006-Power_of_Thor_-_Episode_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingame/007-Temperatures/007-Temperatures.iml" filepath="$PROJECT_DIR$/codingame/007-Temperatures/007-Temperatures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingame/008-Chuck_Norris/008-Chuck_Norris.iml" filepath="$PROJECT_DIR$/codingame/008-Chuck_Norris/008-Chuck_Norris.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingame/009-Dungeons_and_maps/009-Dungeons_and_maps.iml" filepath="$PROJECT_DIR$/codingame/009-Dungeons_and_maps/009-Dungeons_and_maps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingame/010-Mars_lander_-_Episode_1/010-Mars_lander_-_Episode_1.iml" filepath="$PROJECT_DIR$/codingame/010-Mars_lander_-_Episode_1/010-Mars_lander_-_Episode_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codingame/011-Skynet_revolution_-_Episode_1/011-Skynet_revolution_-_Episode_1.iml" filepath="$PROJECT_DIR$/codingame/011-Skynet_revolution_-_Episode_1/011-Skynet_revolution_-_Episode_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Various/Other_coding_games/1-Minimum_positive_integer_not_in_array/1-Minimum_positive_integer_not_in_array.iml" filepath="$PROJECT_DIR$/Various/Other_coding_games/1-Minimum_positive_integer_not_in_array/1-Minimum_positive_integer_not_in_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Various/Utils/1-Order_system_input/1-Order_system_input.iml" filepath="$PROJECT_DIR$/Various/Utils/1-Order_system_input/1-Order_system_input.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nixia.io/1-Website_Pagination/1-Website_Pagination.iml" filepath="$PROJECT_DIR$/Nixia.io/1-Website_Pagination/1-Website_Pagination.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nixia.io/2-Authentication_Tokens/2-Authentication_Tokens.iml" filepath="$PROJECT_DIR$/Nixia.io/2-Authentication_Tokens/2-Authentication_Tokens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nixia.io/3-Department_Summary/3-Department_Summary.iml" filepath="$PROJECT_DIR$/Nixia.io/3-Department_Summary/3-Department_Summary.iml" />
       <module fileurl="file://$PROJECT_DIR$/CodingGames.iml" filepath="$PROJECT_DIR$/CodingGames.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Various/Utils/Utils.iml" filepath="$PROJECT_DIR$/Various/Utils/Utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Various/Various.iml" filepath="$PROJECT_DIR$/Various/Various.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToptalTests/task1/task1.iml" filepath="$PROJECT_DIR$/ToptalTests/task1/task1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToptalTests/task2/task2.iml" filepath="$PROJECT_DIR$/ToptalTests/task2/task2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToptalTests/task3/task3.iml" filepath="$PROJECT_DIR$/ToptalTests/task3/task3.iml" />
     </modules>
   </component>
 </project>
