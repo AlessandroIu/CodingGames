@@ -21,9 +21,9 @@
       <module fileurl="file://$PROJECT_DIR$/CodingGames.iml" filepath="$PROJECT_DIR$/CodingGames.iml" />
       <module fileurl="file://$PROJECT_DIR$/Various/Utils/Utils.iml" filepath="$PROJECT_DIR$/Various/Utils/Utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/Various/Various.iml" filepath="$PROJECT_DIR$/Various/Various.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ToptalTests/task1/task1.iml" filepath="$PROJECT_DIR$/ToptalTests/task1/task1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ToptalTests/task2/task2.iml" filepath="$PROJECT_DIR$/ToptalTests/task2/task2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ToptalTests/task3/task3.iml" filepath="$PROJECT_DIR$/ToptalTests/task3/task3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Toptal_Tests/task1/task1.iml" filepath="$PROJECT_DIR$/Toptal_Tests/task1/task1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Toptal_Tests/task2/task2.iml" filepath="$PROJECT_DIR$/Toptal_Tests/task2/task2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Toptal_Tests/task3/task3.iml" filepath="$PROJECT_DIR$/Toptal_Tests/task3/task3.iml" />
     </modules>
   </component>
 </project>
